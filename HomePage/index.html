@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Cheat Injector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Wills's Anti-Cheat</h1>
+        <p>Please enter your PlayFab settings below:</p>
+
+        <!-- PlayFab Settings Form -->
+        <form id="configForm">
+            <label for="playFabTitleId">PlayFab Title ID:</label>
+            <input type="text" id="playFabTitleId" placeholder="Enter PlayFab Title ID" required><br>
+
+            <label for="playFabApiKey">PlayFab API Key:</label>
+            <input type="text" id="playFabApiKey" placeholder="Enter PlayFab API Key" required><br>
+
+            <label for="defaultBanDuration">Default Ban Duration (hours):</label>
+            <input type="number" id="defaultBanDuration" placeholder="Enter default ban duration in hours" required><br>
+
+            <button type="submit">Save Configuration</button>
+        </form>
+
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
